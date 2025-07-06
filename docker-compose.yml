@@ -1,0 +1,12 @@
+services:
+  go-app:
+    build: ./go-app
+    container_name: go-app
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./go-app:/app
+    working_dir: /app
+    command: air
+
