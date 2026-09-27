@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local chat - Andrew Rossell</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="chat-page">
+
+  <div class="accent-bar has-tabs"></div>
+
+  <ul class="site-tabs" aria-label="Pages">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="model.html" aria-current="page">Local chat</a></li>
+  </ul>
+
+  <header class="chat-header">
+    <div>
+      <h1>Local chat</h1>
+      <p class="title-line">Runs entirely on this machine via Ollama</p>
+    </div>
+    <select id="model" aria-label="Model"></select>
+    <button id="clear" type="button">New chat</button>
+  </header>
+
+  <main id="log" aria-live="polite">
+    <p class="empty" id="empty">Pick a model and send a message. Everything runs on your machine.</p>
+  </main>
+
+  <form id="form" class="chat-form">
+    <textarea id="input" rows="1" placeholder="Message (Enter to send, Shift+Enter for a new line)"></textarea>
+    <button id="send" class="primary" type="submit">Send</button>
+  </form>
+
+<script src="js/chat.js"></script>
+</body>
+</html>

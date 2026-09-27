@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Rossell - Personal Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="accent-bar has-tabs"></div>
+
+    <ul class="site-tabs" aria-label="Pages">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="model.html">Local chat</a></li>
+    </ul>
+
+    <div class="header-area">
+        <div>
+            <h1>Andrew Rossell</h1>
+            <p class="title-line">Software Engineer</p>
+            <div class="contact-info">
+                Email: <a href="mailto:alrossell@gmail.com">alrossell@gmail.com</a><br>
+                GitHub: <a href="https://github.com/alrossell">github.com/alrossell</a><br>
+                LinkedIn: <a href="https://linkedin.com/in/andrew-rossell-18094a193">linkedin.com/in/andrew-rossell</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>About Me</h2>
+
+    <p>
+      Welcome to my homepage. I am a software developer based in Los Angeles working at Northrop Grumman. In this position,
+      I develop test software for the communication payload of a satellite. In this role I create the application layer that
+      allows users to easily interact with test hardware to integrate and verify that the satellite is working within spec.
+    </p>
+
+    <p>
+      When I'm not writing code at work I like to work on various different side projects to learn new things. My side projects
+      aren't concentrated in any specific area, just whatever I'm curious about in the current moment. This can range from wanting
+      to learn how to create and load a program on a FPGA to learning a new language and how to implement a basic server on it. Usually
+      I'm more focused on journey with the projects rather than having a polished product.
+    </p>
+
+    <hr>
+
+    <h2>Projects</h2>
+
+    <div class="entry">
+        <b>Local AI Chat</b> <span class="meta">(password protected)</span>
+        <p>A chat page for language models running on this server through Ollama, with no outside services involved.
+        Nginx proxies the page's requests to Ollama and puts a password in front of it.</p>
+        <a class="entry-link" href="model.html">Open the chat</a>
+    </div>
+
+    <div class="entry">
+        <b>Chip-8 Emulator</b>
+        <p>Created CHIP-8 which is a simple interpreted language with 4 KB of RAM, 16 registers, a 64×32 monochrome display,
+        and 35 two-byte opcodes. The emulator loop just fetches, decodes, and executes instructions while managing two 60 Hz
+        timers and XOR-based sprite rendering.</p>
+    </div>
+
+    <div class="entry">
+        <b>Simple FPGA Counter</b>
+        <p>Built a 4-digit BCD counter on a Basys 3 FPGA using VHDL, with a clock divider to produce a 1 Hz tick, a counter module
+        to count 0–9999, and a multiplexed 7-segment display driver to show the result all wired together in a top-level module
+        and programmed onto the board via Vivado.</p>
+    </div>
+
+    <div class="entry">
+        <b>Personal Website</b> <span class="meta">(this site)</span>
+        <p>Turned a mini PC running Ubuntu Server into a secure, self-hosted web server. Hardened SSH with key-based auth,
+        a custom port, UFW, and Fail2Ban, then set up Nginx to serve a static portfolio site with HTTPS via Let's Encrypt.
+        Added automatic security updates, dynamic DNS, server monitoring, automated backups, and a one-command deploy workflow.</p>
+    </div>
+
+    <hr>
+
+    <h2>Experience</h2>
+
+    <div class="entry">
+        <b>T2 Software Engineer</b> — Northrop Grumman<br>
+        <span class="meta">2025 – Present</span>
+    </div>
+
+    <div class="entry">
+        <b>T1 Software Engineer</b> — Northrop Grumman<br>
+        <span class="meta">2022 – 2025</span>
+    </div>
+
+    <div class="entry">
+        <b>Senior TA</b> — Loyola Marymount University<br>
+        <span class="meta">2021 – 2022</span>
+    </div>
+
+    <hr>
+
+    <h2>Skills</h2>
+
+    <ul class="skills-grid">
+        <li><b>Languages:</b><p>C++, C#, Python, Java, Rust</p></li>
+        <li><b>Editors:</b><p>Visual Studio, Eclipse, Vim, Vivado</p></li>
+        <li><b>DevOps:</b><p>Jira, Bitbucket, GitHub, Git</p></li>
+        <li><b>General Tools:</b><p>Linux, Windows, Nginx, SSH</p></li>
+    </ul>
+
+    <hr>
+
+    <h2>Contact</h2>
+
+    <div class="contact-section">
+        <p>The best way to reach me is by email at <a href="mailto:alrossell@gmail.com">alrossell@gmail.com</a>.</p>
+        <p>You can also find me on <a href="https://github.com/alrossell">GitHub</a> and
+          <a href="https://linkedin.com/in/andrew-rossell-18094a193">LinkedIn</a>.</p>
+    </div>
+
+    <hr>
+
+    <p class="update-note">Last updated: September 2026</p>
+    <p class="update-note">&copy; 2026 Andrew Rossell. All rights reserved.</p>
+
+</body>
+</html>
